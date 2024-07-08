@@ -1,0 +1,122 @@
+.logo2{
+    padding-left: 52px;
+    width: 213.6px;
+    height: 48.6px;
+    margin-top: 27px;
+    /*margin-left: 1000px;
+    padding: 5px;*/
+}
+
+.footer-p{
+    color: #ffffff6b;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-left: 52px;
+}
+
+.footer-icon{
+    padding-left: 52px;
+    font-size: 20px;
+}
+
+.icon1{
+    color: #FFFFFF;
+    margin-right: 10px;
+   
+}
+
+.icon1:hover{
+    color: #4FEED2;
+}
+
+.icon2{
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.icon2:hover{
+    color: #727FFF;
+}
+
+.icon3{
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.icon3:hover{
+    color: #4FEED2;
+}
+
+.icon4{
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.icon4:hover{
+    color: #727FFF;
+}
+
+.blue{
+    color: #3FA1FB;
+    font-size: 25px;
+    margin-top: 0px;
+    padding-right: 60px;
+}
+
+.green{
+    color: #4FEED2;
+    font-size: 25px;
+    margin-bottom: 0px;
+    padding-right: 60px;
+}
+.mblue{
+    color: #3FA1FB;
+    font-size: 25px;
+    margin-top: 60px;
+    padding-left: 150px;
+}
+
+.mgreen{
+    color: #4FEED2;
+    font-size: 25px;
+    padding-left: 200px;
+    /* margin-bottom: 73px; */
+}
+
+.footerNav{
+    padding-left: 180px;
+
+}
+
+.footer-link {
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+
+.footer-link:hover{
+    color: #727FFF;
+}
+
+.footer-link.active {
+    font-weight: bold; 
+    color: #4FEED2; 
+}
+
+/*.active {
+    font-weight: bold; 
+    color: #4FEED2; 
+}
+
+.footer-link.handleaSetActiveLink{
+    font-weight: bold; 
+    color: #4FEED2;
+}*/
+
+.white1{
+    color: #ffffff6b;
+    font-size: 15px;
+    margin-top: -8px;
+    padding-right: 60px;
+}
+
+ 
