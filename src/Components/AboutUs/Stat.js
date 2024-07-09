@@ -2,12 +2,10 @@ import React , { useEffect, useState, SVGProps } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { BsFillGridFill } from "react-icons/bs";
-// import type { SVGProps } from 'react';
+//import type { SVGProps } from 'react';
+import './Stat.css';
 
-import './Stats.css';
-
-export const Stats = (props:SVGProps<SVGSVGElement>) => {
-
+export const Stat = (props:SVGProps<SVGSVGElement>) => {
 
     useEffect(() => {
         const elements = Array.from(document.querySelectorAll("h2[data-count]"));
@@ -100,3 +98,4 @@ export const Stats = (props:SVGProps<SVGSVGElement>) => {
        
     );
 }
+export default Stat;

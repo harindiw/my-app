@@ -1,9 +1,6 @@
 import { Container, Row, Colff } from "react-bootstrap";
-// import bgVideo from "./bgVideo.mp4";
-import "animate.css";
-import "./Offer.css";
-import servicesHome from "./servicesHome.png"
-import { Work } from "./Work"
+//import "animate.css";
+import "./Offers.css";
 import React , { useState , useEffect}from 'react';
 
 import { IoHardwareChipOutline } from "react-icons/io5";
@@ -14,7 +11,7 @@ import { FaRegBuilding } from "react-icons/fa";
 
 
 
-export const Offer = () => {
+export const Offers = () => {
   const [slideIndex, setSlideIndex] = useState(1);
 
   const plusSlides = (n) => {
@@ -141,3 +138,5 @@ return (
   </div>
 );
 };
+
+export default Offers;

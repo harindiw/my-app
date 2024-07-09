@@ -1,4 +1,4 @@
-import IOTlogo1 from './Home_imgs/IOTlogo1.png';
+import logo from './Images/logo.png';
 import { FaEnvelope } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
@@ -21,7 +21,7 @@ export const Footer = () => {
     <div class="c">
   <div class="row">
     <div class="col-sm">
-    <img className="logo2" src={IOTlogo1} alt=""/>
+    <img className="logo" src={logo} alt=""/>
     <p className="footer-p">We are pioneers in utilizing the potential of IoT technology to transform how organizations and people engage with the real world.</p>
     <div className="footer-icon">
         <a href="info@iotsolutions.lk" target="_blank" rel="noopener noreferrer"><FaEnvelope className="icon1" /></a>

@@ -12,10 +12,8 @@ export const Review = () => {
   return (
     <div className='re'>
       <h1 className="project_h1">Reviews</h1>
+
     <div className="review-container">
-
-            
-
       <figure className="snip1157">
         <blockquote>I highly recommend IOT Solutions for their exceptional expertise in
           automation solutions. With a proven track record of successful
@@ -56,3 +54,4 @@ export const Review = () => {
     
   )
 }
+export default Review;
