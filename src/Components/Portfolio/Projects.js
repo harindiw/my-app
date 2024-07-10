@@ -2,321 +2,47 @@ import React, { useState } from 'react';
 import './Projects.css'; // Import the CSS file for styling
 
 function Projects() {
-  const [hovered1, setHovered1] = useState(false);
-  const [hovered2, setHovered2] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  const handleMouseEnter1 = () => {
-    setHovered1(true);
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
   };
 
-  const handleMouseLeave1 = () => {
-    setHovered1(false);
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
   };
 
-  const handleMouseEnter2 = () => {
-    setHovered2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setHovered2(false);
-  };
+  const images = [
+    { defaultSrc: '/Project1-default.png', hoverSrc: '/Project1-hover.png', name: 'Project 1' },
+    { defaultSrc: '/Project2-default.png', hoverSrc: '/Project2-hover.png', name: 'Project 2' },
+    { defaultSrc: '/Project3-default.png', hoverSrc: '/Project3-hover.png', name: 'Project 3' },
+    { defaultSrc: '/Project4-default.png', hoverSrc: '/Project4-hover.png', name: 'Project 4' },
+    { defaultSrc: '/Project5-default.png', hoverSrc: '/Project5-hover.png', name: 'Project 5' },
+    { defaultSrc: '/Project6-default.png', hoverSrc: '/Project6-hover.png', name: 'Project 6' },
+  ];
 
   return (
     <div className="portfolio-container">
       <h2 className="subtitle">Our Portfolio</h2>
       <div className="image-container">
-        <div className="image-wrapper">
-          <img
-            src={hovered1 ? '/div.p-uvt64 4.png' : '/Project 2 - draft.png'}
-            alt="Hover-image-1"
-            onMouseEnter={handleMouseEnter1}
-            onMouseLeave={handleMouseLeave1}
-            className="hover-image"
-          />
-          {hovered1 && <div className="image-name">Lorem Ipsum</div>}
-        </div>
-        <div className="image-wrapper">
-          <img
-            src={hovered2 ? '/download 2 1.png' : '/Project 1 - draft.png'}
-            alt="Hover-image-2"
-            onMouseEnter={handleMouseEnter2}
-            onMouseLeave={handleMouseLeave2}
-            className="hover-image"
-          />
-          {hovered2 && <div className="image-name">Lorem Ipsum</div>}
-        </div>import React, { useState } from 'react';
-        import React, { useState } from 'react';
-import './Projects.css'; // Import the CSS file for styling
-
-function Projects() {
-  const [hovered1, setHovered1] = useState(false);
-  const [hovered2, setHovered2] = useState(false);
-
-  const handleMouseEnter1 = () => {
-    setHovered1(true);
-  };
-
-  const handleMouseLeave1 = () => {
-    setHovered1(false);
-  };
-
-  const handleMouseEnter2 = () => {
-    setHovered2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setHovered2(false);
-  };
-
-  return (
-    <div className="portfolio-container">
-      <h2 className="subtitle">Our Portfolio</h2>
-      <div className="image-container">
-        <div className="image-wrapper">
-          <img
-            src={hovered1 ? '/div.p-uvt64 4.png' : '/Project 2 - draft.png'}
-            alt="Hover-image-1"
-            onMouseEnter={handleMouseEnter1}
-            onMouseLeave={handleMouseLeave1}
-            className="hover-image"
-          />
-          {hovered1 && <div className="image-name">Lorem Ipsum</div>}
-        </div>
-        <div className="image-wrapper">
-          <img
-            src={hovered2 ? '/download 2 1.png' : '/Project 1 - draft.png'}
-            alt="Hover-image-2"
-            onMouseEnter={handleMouseEnter2}
-            onMouseLeave={handleMouseLeave2}
-            className="hover-image"
-          />
-          {hovered2 && <div className="image-name">Lorem Ipsum</div>}
-          import React, { useState } from 'react';
-import './Projects.css'; // Import the CSS file for styling
-
-function Projects() {
-  const [hovered1, setHovered1] = useState(false);
-  const [hovered2, setHovered2] = useState(false);
-
-  const handleMouseEnter1 = () => {
-    setHovered1(true);
-  };
-
-  const handleMouseLeave1 = () => {
-    setHovered1(false);
-  };
-
-  const handleMouseEnter2 = () => {
-    setHovered2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setHovered2(false);
-  };
-
-  return (
-    <div className="portfolio-container">
-      <h2 className="subtitle">Our Portfolio</h2>
-      <div className="image-container">
-        <div className="image-wrapper">
-          <img
-            src={hovered1 ? '/div.p-uvt64 4.png' : '/Project 2 - draft.png'}
-            alt="Hover-image-1"
-            onMouseEnter={handleMouseEnter1}
-            onMouseLeave={handleMouseLeave1}
-            className="hover-image"
-          />
-          {hovered1 && <div className="image-name">Lorem Ipsum</div>}
-        </div>
-        <div className="image-wrapper">
-          <img
-            src={hovered2 ? '/download 2 1.png' : '/Project 1 - draft.png'}
-            alt="Hover-image-2"
-            onMouseEnter={handleMouseEnter2}
-            onMouseLeave={handleMouseLeave2}
-            className="hover-image"
-          />
-          {hovered2 && <div className="image-name">Lorem Ipsum</div>}
-          import React, { useState } from 'react';
-import './Projects.css'; // Import the CSS file for styling
-
-function Projects() {
-  const [hovered1, setHovered1] = useState(false);
-  const [hovered2, setHovered2] = useState(false);
-
-  const handleMouseEnter1 = () => {
-    setHovered1(true);
-  };
-
-  const handleMouseLeave1 = () => {
-    setHovered1(false);
-  };
-
-  const handleMouseEnter2 = () => {
-    setHovered2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setHovered2(false);
-  };
-
-  return (
-    <div className="portfolio-container">
-      <h2 className="subtitle">Our Portfolio</h2>
-      <div className="image-container">
-        <div className="image-wrapper">
-          <img
-            src={hovered1 ? '/div.p-uvt64 4.png' : '/Project 2 - draft.png'}
-            alt="Hover-image-1"
-            onMouseEnter={handleMouseEnter1}
-            onMouseLeave={handleMouseLeave1}
-            className="hover-image"
-          />
-          {hovered1 && <div className="image-name">Lorem Ipsum</div>}
-        </div>
-        <div className="image-wrapper">
-          <img
-            src={hovered2 ? '/download 2 1.png' : '/Project 1 - draft.png'}
-            alt="Hover-image-2"
-            onMouseEnter={handleMouseEnter2}
-            onMouseLeave={handleMouseLeave2}
-            className="hover-image"
-          />
-          {hovered2 && <div className="image-name">Lorem Ipsum</div>}
-          import React, { useState } from 'react';
-import './Projects.css'; // Import the CSS file for styling
-
-function Projects() {
-  const [hovered1, setHovered1] = useState(false);
-  const [hovered2, setHovered2] = useState(false);
-
-  const handleMouseEnter1 = () => {
-    setHovered1(true);
-  };
-
-  const handleMouseLeave1 = () => {
-    setHovered1(false);
-  };
-
-  const handleMouseEnter2 = () => {
-    setHovered2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setHovered2(false);
-  };
-
-  return (
-    <div className="portfolio-container">
-      <h2 className="subtitle">Our Portfolio</h2>
-      <div className="image-container">
-        <div className="image-wrapper">
-          <img
-            src={hovered1 ? '/div.p-uvt64 4.png' : '/Project 2 - draft.png'}
-            alt="Hover-image-1"
-            onMouseEnter={handleMouseEnter1}
-            onMouseLeave={handleMouseLeave1}
-            className="hover-image"
-          />
-          {hovered1 && <div className="image-name">Lorem Ipsum</div>}
-        </div>
-        <div className="image-wrapper">
-          <img
-            src={hovered2 ? '/download 2 1.png' : '/Project 1 - draft.png'}
-            alt="Hover-image-2"
-            onMouseEnter={handleMouseEnter2}
-            onMouseLeave={handleMouseLeave2}
-            className="hover-image"
-          />
-          {hovered2 && <div className="image-name">Lorem Ipsum</div>}
-        </div>
+        {images.map((image, index) => (
+          <div
+            className="image-wrapper"
+            key={index}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <img
+              src={hoveredIndex === index ? image.hoverSrc : image.defaultSrc}
+              alt={`Hover-image-${index + 1}`}
+              className="hover-image"
+            />
+            {hoveredIndex === index && <div className="image-name">{image.name}</div>}
+          </div>
+        ))}
       </div>
     </div>
   );
 }
 
 export default Projects;
-
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default Projects;
-
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default Projects;
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default Projects;
-
-import './Projects.css'; // Import the CSS file for styling
-
-function Projects() {
-  const [hovered1, setHovered1] = useState(false);
-  const [hovered2, setHovered2] = useState(false);
-
-  const handleMouseEnter1 = () => {
-    setHovered1(true);
-  };
-
-  const handleMouseLeave1 = () => {
-    setHovered1(false);
-  };
-
-  const handleMouseEnter2 = () => {
-    setHovered2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setHovered2(false);
-  };
-
-  return (
-    <div className="portfolio-container">
-      <h2 className="subtitle">Our Portfolio</h2>
-      <div className="image-container">
-        <div className="image-wrapper">
-          <img
-            src={hovered1 ? '/div.p-uvt64 4.png' : '/Project 2 - draft.png'}
-            alt="Hover-image-1"
-            onMouseEnter={handleMouseEnter1}
-            onMouseLeave={handleMouseLeave1}
-            className="hover-image"
-          />
-          {hovered1 && <div className="image-name">Lorem Ipsum</div>}
-        </div>
-        <div className="image-wrapper">
-          <img
-            src={hovered2 ? '/download 2 1.png' : '/Project 1 - draft.png'}
-            alt="Hover-image-2"
-            onMouseEnter={handleMouseEnter2}
-            onMouseLeave={handleMouseLeave2}
-            className="hover-image"
-          />
-          {hovered2 && <div className="image-name">Lorem Ipsum</div>}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default Projects;
-
-      </div>
-    </div>
-  );
-}
-
-export default Projects;
-
