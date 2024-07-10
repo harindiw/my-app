@@ -32,6 +32,7 @@ function Projects() {
           className="hover-image"
         />
         {hovered && <div className="image-name">Lorem Ipsum</div>}
+        
       </div>
     </div>
   );
