@@ -18,7 +18,15 @@ function Projects() {
       <div className="image-container">
         <img
           src={hovered ? '/div.p-uvt64 4.png' : '/Project 2 - draft.png'}
-          alt="Hover"
+          alt="Hover-image"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="hover-image"
+        />
+        {hovered && <div className="image-name">Lorem Ipsum</div>}
+        <img
+          src={hovered ? '/download 2 1.png' : '/Project 1 - draft.png'}
+          alt="Hover-image"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           className="hover-image"
