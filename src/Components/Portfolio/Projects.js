@@ -17,8 +17,8 @@ function Projects() {
       <h2 className="subtitle">Our Portfolio</h2>
       <div className="image-container">
         <img
-          src={hovered ? '/path/to/darker-image.png' : '/path/to/original-image.png'}
-          alt="Hover Image"
+          src={hovered ? '/div.p-uvt64 4.png' : '/Project 2 - draft.png'}
+          alt="Hover"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           className="hover-image"
