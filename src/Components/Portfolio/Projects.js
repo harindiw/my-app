@@ -12,13 +12,13 @@ function Projects() {
     setHoveredIndex(null);
   };
 
-  const images = [
-    { defaultSrc: '/Project1-default.png', hoverSrc: '/Project1-hover.png', name: 'Project 1' },
-    { defaultSrc: '/Project2-default.png', hoverSrc: '/Project2-hover.png', name: 'Project 2' },
-    { defaultSrc: '/Project3-default.png', hoverSrc: '/Project3-hover.png', name: 'Project 3' },
-    { defaultSrc: '/Project4-default.png', hoverSrc: '/Project4-hover.png', name: 'Project 4' },
-    { defaultSrc: '/Project5-default.png', hoverSrc: '/Project5-hover.png', name: 'Project 5' },
-    { defaultSrc: '/Project6-default.png', hoverSrc: '/Project6-hover.png', name: 'Project 6' },
+  const images = [t.png
+    { defaultSrc: '/Project1.2.png', hoverSrc: '/Project 1 - draft.png', name: 'Project 1' },
+    { defaultSrc: '/Project2.1.png', hoverSrc: '/Project2-hover.png', name: 'Project 2' },
+    { defaultSrc: '/Project1.2.png', hoverSrc: '/Project 1 - draft.png', name: 'Project 3' },
+    { defaultSrc: '/Project2.1.png', hoverSrc: '/Project2-hover.png', name: 'Project 4' },
+    { defaultSrc: '/Project1.2.png', hoverSrc: '/Project 1 - draft.png', name: 'Project 5' },
+    { defaultSrc: '/Project2.1.png', hoverSrc: '/Project2-hover.png', name: 'Project 6' },
   ];
 
   return (
