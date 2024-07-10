@@ -4,8 +4,8 @@ import './Review.css';
 // import img from "./Home_imgs/review_bg.png"
 
 import Wikum from "./Wikum.png"
-import Oshade from "./Home_imgs/Oshade.jpeg"
-import uditha from "./Home_imgs/uditha.png"
+import Oshade from "./Oshade.jpeg"
+import uditha from "./uditha.png"
 
 export const Review = () => {
  
