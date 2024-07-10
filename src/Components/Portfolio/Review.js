@@ -1,7 +1,7 @@
 import React from 'react';
 import './Review.css';
-import image from "../../assets/img/img20.png"
-import img from "./Home_imgs/review_bg.png"
+// import image from "../../assets/img/img20.png"
+// import img from "./Home_imgs/review_bg.png"
 
 import Wikum from "./Wikum.png"
 import Oshade from "./Home_imgs/Oshade.jpeg"
