@@ -3,7 +3,7 @@ import './Review.css';
 import image from "../../assets/img/img20.png"
 import img from "./Home_imgs/review_bg.png"
 
-import Wikum from "./Home_imgs/Wikum.png"
+import Wikum from "./Wikum.png"
 import Oshade from "./Home_imgs/Oshade.jpeg"
 import uditha from "./Home_imgs/uditha.png"
 

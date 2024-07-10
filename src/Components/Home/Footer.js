@@ -1,4 +1,4 @@
-import logo from './Images/logo.png';
+import logo from './logo.png';
 import { FaEnvelope } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
