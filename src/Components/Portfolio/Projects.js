@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './Projects.css'; // Import the CSS file for styling
+// import Project1 from './project1.png';
+// import Project2 from './project1.2.png';
+// import Project3 from '/project2.png';
+// import Project4 from '/project2.1.png';
 
 function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -10,15 +14,15 @@ function Projects() {
 
   const handleMouseLeave = () => {
     setHoveredIndex(null);
-  };
+  }; 
 
-  const images = [t.png
-    { defaultSrc: '/Project1.2.png', hoverSrc: '/Project 1 - draft.png', name: 'Project 1' },
-    { defaultSrc: '/Project2.1.png', hoverSrc: '/Project2-hover.png', name: 'Project 2' },
-    { defaultSrc: '/Project1.2.png', hoverSrc: '/Project 1 - draft.png', name: 'Project 3' },
-    { defaultSrc: '/Project2.1.png', hoverSrc: '/Project2-hover.png', name: 'Project 4' },
-    { defaultSrc: '/Project1.2.png', hoverSrc: '/Project 1 - draft.png', name: 'Project 5' },
-    { defaultSrc: '/Project2.1.png', hoverSrc: '/Project2-hover.png', name: 'Project 6' },
+  const images = [
+    { defaultSrc: '/project1.png', hoverSrc: '/project1.2.png', name: 'Project1' },
+    { defaultSrc: '/project2.png', hoverSrc: '/project2.1.png', name: 'Project2' },
+    { defaultSrc: '/project1.png', hoverSrc: '/project1.2.png', name: 'Project3' }, 
+    { defaultSrc: '/project2.png', hoverSrc: '/project2.1.png', name: 'Project4' },
+    { defaultSrc: '/project1.png', hoverSrc: '/project1.2.png', name: 'Project5' },
+    { defaultSrc: '/project2.png', hoverSrc: '/project2.1.png', name: 'Project6' },
   ];
 
   return (
