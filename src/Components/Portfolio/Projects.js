@@ -29,6 +29,25 @@ function Projects() {
     <div className="portfolio-container">
       <h2 className="subtitle">Our Portfolio</h2>
       <div className="image-container">
+<<<<<<< HEAD
+        <img
+          src={hovered ? '/div.p-uvt64 4.png' : '/Project 2 - draft.png'}
+          alt="Hover-image"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="hover-image"
+        />
+        {hovered && <div className="image-name">Lorem Ipsum</div>}
+        <img
+          src={hovered ? '/download 2 1.png' : '/Project 1 - draft.png'}
+          alt="Hover-image"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="hover-image"
+        />
+        {hovered && <div className="image-name">Lorem Ipsum</div>}
+        
+=======
         {images.map((image, index) => (
           <div
             className="image-wrapper"
@@ -44,6 +63,7 @@ function Projects() {
             {hoveredIndex === index && <div className="image-name">{image.name}</div>}
           </div>
         ))}
+>>>>>>> 6c471afe3be1303d2ea2f29f3b188efe15600029
       </div>
     </div>
   );

@@ -1,4 +1,39 @@
 .portfolio-container {
+<<<<<<< HEAD
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 28px; /* Adjust as needed */
+    font-weight: bold; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-image {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+  }
+  
+  .image-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color as needed */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    display: none; /* Initially hidden */
+  }
+  
+  .image-container:hover .image-name {
+    display: block;
+  }
+=======
   text-align: center;
 }
 
@@ -39,3 +74,4 @@
 .image-wrapper:hover .image-name {
   display: block;
 }
+>>>>>>> 6c471afe3be1303d2ea2f29f3b188efe15600029
