@@ -1,11 +1,9 @@
-/* Float four columns side by side */
 .column-stat {
-  flex: 0 1 21%; /* Flex property to allow wrapping and resizing */
-  padding: 10px; /* Ensure padding for better spacing */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  flex: 0 1 21%; 
+  padding: 10px; 
+  box-sizing: border-box; 
 }
 
-/* Background styling */
 .stat_bg, .row-stat {
   background: #001125;
   display: flex;
@@ -13,10 +11,9 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 20px 0; /* Add padding for better spacing */
+  padding: 20px 0; 
 }
 
-/* Specific heights for different elements */
 .stat_bg {
   height: auto;
 }
@@ -45,7 +42,6 @@
   }
 }
 
-/* Headings and paragraph styles */
 h3 {
   margin-top: 8px;
   color: #727FFF;
@@ -64,7 +60,6 @@ h3 {
   font-size: 18px;
 }
 
-/* Card styling and animation */
 .card-stat {
   position: relative;
   overflow: hidden;
@@ -81,7 +76,7 @@ h3 {
 }
 
 .card-stat:hover {
-  transform: translateY(-12px); /* Move card upwards on hover */
+  transform: translateY(-12px); 
 }
 
 .card-stat::before {
@@ -92,7 +87,7 @@ h3 {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.5); /* Initial glow color */
+  box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.5);
   animation: glow 2s infinite alternate;
 }
 
@@ -101,11 +96,10 @@ h3 {
     box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.5);
   }
   100% {
-    box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0.5); /* Increase glow intensity */
+    box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0.5); 
   }
 }
 
-/* Center box styling */
 .center-box {
   height: 100vh;
   display: flex;
