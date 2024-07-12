@@ -18,11 +18,7 @@ const Banner = () => {
         </ul>
       </nav>
 
-      <div className="banner-content">
-        <h1>Develop your Enterprise With Internet Of Things</h1>
-        <p>We have developed top-notch IOT devices and assisted numerous organizations in achieving economic success.</p>
-        <button className="contact-btn">Contact Us</button>
-      </div>
+      
 
       <div className="slider">
         <div className="slides">
@@ -31,6 +27,14 @@ const Banner = () => {
           <img src={slide3} alt="Slide 3" />
         </div>
       </div>
+
+      <div className="banner-content">
+        <h1>Develop your Enterprise With Internet Of Things</h1>
+        <p>We have developed top-notch IOT devices and assisted numerous organizations in achieving economic success.</p>
+        <button className="contact-btn">Contact Us</button>
+      </div>
+      
+
     </div>
   );
 };
