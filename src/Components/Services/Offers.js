@@ -9,8 +9,6 @@ import { FaNetworkWired } from "react-icons/fa6";
 import { MdOutlineSecurity } from "react-icons/md";
 import { FaRegBuilding } from "react-icons/fa";
 
-
-
 export const Offers = () => {
   const [slideIndex, setSlideIndex] = useState(1);
 
@@ -55,7 +53,6 @@ return (
   <div>
     <div id="offer">
       <h1 className="work-h">What we offer you</h1>
-      <h1 className="work-h1">Working with us is simple! </h1>
 
       <div className="slideshow-container">
         
@@ -77,11 +74,7 @@ return (
       </div>
     </div>
   </div>
-
 </div>
-
-
-
 
 <div className="mySlides">
   <div className="rowff">

@@ -5,7 +5,7 @@
 }
 
 .stat_bg, .row-stat {
-  background: #001125;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,18 +44,18 @@
 
 h3 {
   margin-top: 8px;
-  color: #727FFF;
+  color: #000000;
   font-size: 27px;
 }
 
 .card-stat h2 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 30px;
   margin-top: 19px;
 }
 
 .card-stat p {
-  color: #727FFF;
+  color: #000000;
   margin-top: -24px;
   font-size: 18px;
 }
@@ -65,10 +65,10 @@ h3 {
   overflow: hidden;
   z-index: 0;
   border-radius: 10px;
-  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 10px 0 rgb(0, 0, 0);
   padding: 16px;
   text-align: center;
-  background-color: #000E41;
+  background-color: #ffffff;
   height: 171px;
   width: 233px;
   background-size: contain;
@@ -105,5 +105,5 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1D1E22;
+  background-color: #ffffff;
 }

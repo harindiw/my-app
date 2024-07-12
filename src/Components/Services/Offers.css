@@ -1,5 +1,6 @@
 #offer{
-    background-color: #001125;
+    background-color: #8591B5;
+    ;
   min-height: 80vh;
   width: 100%;
   padding-top: 80px;
@@ -42,15 +43,15 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
+  background-color: #8591B5;
+  color: rgb(255, 255, 255);
 }
 
 /* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
     padding: 20px;
-    background: #001125;
+    background: #8591B5;
 }
 
 /* The dots/bullets/indicators */
@@ -59,7 +60,7 @@
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #000000;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -89,26 +90,26 @@ q {font-style: italic;}
   padding-left: 80px;
 }
 .mySlides {
-  background-color: #001125;
+  background-color:  #8591B5;
 }
 .off-h1{
   font-size: 28px;
-  color: #3FA1FB;
+  color: #000000;
 }
 .off-p1{
   font-size: 20px;
-  color: #3FA1FB;
+  color: #000000;
 }
 .off-h2{
   font-size: 28px;
-  color: #4FEED2;
+  color: #000000;
 }
 .off-p2{
   font-size: 20px;
-  color: #4FEED2;
+  color: #000000;
 }
 
 a:not([href]):not([tabindex]) {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }

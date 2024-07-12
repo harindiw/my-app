@@ -32,7 +32,7 @@
       display:block;
       margin:28px 0 0;
       font-size:14px;
-      color:#fff;
+      color:#ffffff;
       
     }
     
@@ -85,7 +85,7 @@
   }
   
   button, input, select, textarea {
-    color: #ffffff;
+    color: #000000;
     font: inherit;
     margin: 0;
   }
@@ -105,7 +105,7 @@
   }
   
   #contact-container {
-    border: solid 3px #ffffff;
+    border: solid 3px #000000;
     max-width: 768px;
     margin: 60px auto;
     position: relative;
@@ -119,7 +119,7 @@
   }
   
   .contact-h1 {
-    color: #ffffff;
+    color: #000000;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 7px;
@@ -129,7 +129,7 @@
   }
   
   .underline {
-    border-bottom: solid 2px #ffffff;
+    border-bottom: solid 2px #000000;
     padding-top: 5px;
     margin: -0.512em auto;
     width: 500px;
@@ -143,8 +143,8 @@
   .input-text-contact, .input-email-contact, select, textarea {
       background: none;
     border: none;
-      border-bottom: solid 2px #ffffff;
-      color: #ffffff;
+      border-bottom: solid 2px #000000;
+      color: #000000;
       font-size: 1.000em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -205,21 +205,21 @@
   }
   
   ::-webkit-input-placeholder {
-      color: #ffffff33;
+      color: #000000;
   }
   
   :-moz-placeholder { 
-      color: #ffffff33;
+      color: #000000;
       opacity: 1;
   }
   
   ::-moz-placeholder {
-      color: #ffffff33;
+      color: #000000;
       opacity: 1;
   }
   
   :-ms-input-placeholder {
-      color: #ffffff33;
+      color: #000000;
   }
   
   #form_button {
@@ -228,7 +228,7 @@
     inline-size: 400px;
     text-align: center;
     border-radius: 10px;
-    color: #ffffff;
+    color: #000000;
     cursor: pointer;
     display: inline-block;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -250,8 +250,9 @@
   }
   
   #form_button:hover {
-    background: #3FA1FB;
-    color: #000000;
+    background: #000000;
+    color: #001641;
+    ;
   }
   
   .submit{

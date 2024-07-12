@@ -48,7 +48,7 @@ a{
     min-width: 220px;
     max-width: 310px;
     width: 100%;
-    color: #333;
+    color: #001641;
     text-align: left;
     box-shadow: none !important;
   }
@@ -80,7 +80,9 @@ a{
     color: #000000;
   }
   figure.snip1157 blockquote:hover {
-    background-color: #fafafacd;
+    color: #ffffff;
+    background-color: #001641;
+    
   }
   figure.snip1157 blockquote:before,
   figure.snip1157 blockquote:after {
@@ -111,8 +113,10 @@ a{
     position: absolute;
   }
   
+  
+
   figure.snip1157 .arrow :hover{
-    color: #fafafacd;
+    color: #001641;
   }
   
   figure.snip1157 .author {
@@ -121,7 +125,7 @@ a{
     padding: 0 10px 0 120px;
     margin: 0;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
     -webkit-transform: translateY(50%);
     transform: translateY(50%);
   }
@@ -142,7 +146,7 @@ a{
     height: 100%;
   }
   body {
-    background-color: #212121;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
