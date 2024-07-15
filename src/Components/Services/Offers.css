@@ -1,8 +1,8 @@
 #offer{
   background-color: #8591B5;
-  min-height: 80vh;
+  min-height: 60vh;
   width: 100%;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 /* Slideshow container */
@@ -14,7 +14,7 @@
 /* Slides */
 .mySlides {
   display: none;
-  padding: 80px;
+  padding: 40px;
   text-align: center;
   background-color: #8591B5;
 }
@@ -56,6 +56,7 @@
     text-align: center;
     padding: 20px;
     background: #8591B5;
+    margin-top: -10px;
 }
 
 /* The dots/bullets/indicators */
