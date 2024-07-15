@@ -1,6 +1,5 @@
 #offer{
-    background-color: #8591B5;
-    ;
+  background-color: #8591B5;
   min-height: 80vh;
   width: 100%;
   padding-top: 80px;
@@ -17,13 +16,14 @@
   display: none;
   padding: 80px;
   text-align: center;
+  background-color: #8591B5;
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
   margin-top: -30px;
   padding: 16px;
@@ -34,9 +34,13 @@
   user-select: none;
 }
 
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
 /* Position the "next button" to the right */
 .next {
-  position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -61,7 +65,7 @@
   width: 15px;
   margin: 0 2px;
   background-color: #000000;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
@@ -72,10 +76,14 @@
 }
 
 /* Add an italic font style to all quotes */
-q {font-style: italic;}
+q {
+  font-style: italic;
+}
 
 /* Add a blue color to the author */
-.author {color: cornflowerblue;}
+.author {
+  color: cornflowerblue;
+}
 
 .rowff {
   display: flex;
