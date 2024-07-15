@@ -86,6 +86,11 @@ q {
   color: cornflowerblue;
 }
 
+.offer{
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
 .rowff {
   display: flex;
   flex-wrap: wrap;

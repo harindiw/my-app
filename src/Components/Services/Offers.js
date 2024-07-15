@@ -50,6 +50,7 @@ export const Offers = () => {
   }, []);
 
 return (
+  <div className="offer">
   <div>
     <div id="offer">
       <h1 className="work-h">What we offer you</h1>
@@ -128,6 +129,7 @@ return (
         </div>
       </div>
     </div>
+  </div>
   </div>
 );
 };
