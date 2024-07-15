@@ -1,4 +1,4 @@
-import { Container, Row, Colff } from "react-bootstrap";
+//import { Container, Row, Colff } from "react-bootstrap";
 //import "animate.css";
 import "./Offers.css";
 import React , { useState , useEffect}from 'react';

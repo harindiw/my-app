@@ -1,24 +1,223 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  inline-size: 100%;
+  inset-block-start: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+}
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
+}
+nav.navbar a.navbar-brand {
+  inline-size: 9%;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    opacity: 1;
+}
+
+span.navbar-text {
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-inline-start: 14px;
+}
+
+.social-icon a {
+    inline-size: 42px;
+    block-size: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-inline-end: 6px;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon a::before {
+    content: "";
+    inline-size: 42px;
+    block-size: 42px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+}
+
+.social-icon a:hover::before {
+    transform: scale(1);
+}
+
+.social-icon a img {
+    inline-size: 40%;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icon a:hover img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+.navbar-text button {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-inline-start: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-text button span {
+  z-index: 1;
+}
+
+.navbar-text button::before {
+  content: "";
+  inline-size: 0%;
+  block-size: 100%;
+  position: absolute;
+  background-color: #fff;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.navbar-text button:hover {
+  color: #121212;
+}
+.navbar-text button:hover::before {
+    content: "";
+    inline-size: 100%;
+    block-size: 100%;
+    position: absolute;
+}
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+nav.navbar .navbar-toggler-icon {
+  inline-size: 24px;
+  block-size: 17px;
+  background-image: none;
+  position: relative;
+  border-block-end: 2px solid #fff;
+  transition: all 300ms linear;
+  inset-block-start: -2px;
+}
+nav.navbar .navbar-toggler-icon:focus {
+    border-block-end: 2px solid #fff;
+}
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+    inline-size: 24px;
+    position: absolute;
+    block-size: 2px;
+    background-color: #fff;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    content: '';
+    z-index: 2;
+    transition: all 300ms linear;
+}
+nav.navbar .navbar-toggler-icon:after {
+    inset-block-start: 8px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(45deg);
+    background-color: #fff;
+    block-size: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: translateY(8px) rotate(-45deg);
+    background-color: #fff;
+    block-size: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+}
+
+.logo {
+  max-width: 100px; /* Adjust size as needed */
+  height: auto;
+  position: absolute; /* Fixes the logo position */
+  top: 10px; /* Adjust the spacing from top as needed */
+  left: 10px; /* Adjust the spacing from left as needed */
+}
+
+
+
+@media (max-inline-size: 600px) {
+  .navbar-toggler {
+    display: block !important; /* Override any other styles */
   }
-  
-  .logo {
-    color: white;
-    font-size: 24px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-  }
-  
+}
+
+
+
+
+
+/* NavBar.css */
+
+.navbar-link {
+position: relative;
+color: #fff;
+text-decoration: none;
+}
+
+.navbar-link::after {
+content: '';
+position: absolute;
+inset-block-end: -2px; /* Adjust as needed */
+inset-inline-start: 0;
+inline-size: 0;
+block-size: 2px;
+background-color: #fff; /* White line color */
+transition: width 0.3s ease-in-out; /* Animation duration */
+}
+
+.navbar-link:hover::after {
+inline-size: 100%;
+}
+
+/* .active::after {
+inline-size: 100%;
+} */
+
+/* Animation to make the line come from the left side */
+.navbar-link::after {
+transform: scaleX(0);
+transform-origin: left;
+}
+
+.navbar-link:hover::after,
+.active::after {
+transform: scaleX(1);
+transform-origin: left;
+}
