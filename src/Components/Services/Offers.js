@@ -1,7 +1,6 @@
-//import { Container, Row, Colff } from "react-bootstrap";
-//import "animate.css";
-import "./Offers.css";
-import React , { useState , useEffect}from 'react';
+import React, { useState, useEffect } from 'react';
+import './Offers.css';
+import backgroundImg from './Rectangle 51.png'; // Adjust the path based on your directory structure
 
 import { IoHardwareChipOutline } from "react-icons/io5";
 import { RiComputerLine, RiRobot2Line } from "react-icons/ri";
@@ -38,7 +37,7 @@ export const Offers = () => {
     for (let i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
-    
+
     slides[newIndex - 1].style.display = "block";
     dots[newIndex - 1].className += " active";
     setSlideIndex(newIndex);
@@ -49,89 +48,83 @@ export const Offers = () => {
     showSlides(1);
   }, []);
 
-return (
-  <div className="offer">
-  <div>
-    <div id="offer">
-      <h1 className="work-h">What we offer you</h1>
+  return (
+    <div className="offer" style={{ backgroundImage: `url(${backgroundImg})` }}>
+      <div>
+        <div id="offer">
+          <h1 className="work-h">What We Offer You</h1>
 
-      <div className="slideshow-container">
-        
-      <div className="mySlides">
-  <div className="rowff">
-    <div className="colff">
-      <h2 className="off-h1">Hardware Engineering</h2>
-      <div className="cardff">
-        <p className="off-p1">IoT companies design and develop IoT devices, sensors, and hardware components with expertise in electronics, embedded systems, and prototyping for tailored solutions.</p>
-        <h1 className="off-h1"><IoHardwareChipOutline /></h1>
-      </div>
-    </div>
-    <div className="colff">
-    <h2 className="off-h2">Software Development</h2>
-      <div className="cardff">
-        
-        <p className="off-p2">IoT solution companies excel in crafting IoT software, firmware, and middleware using languages like C, C++, Python, Java, ensuring versatile solutions.</p>
-        <h1 className="off-h2"><RiComputerLine /></h1>
-      </div>
-    </div>
-  </div>
-</div>
+          <div className="slideshow-container">
+            <div className="mySlides">
+              <div className="rowff">
+                <div className="colff">
+                  <h2 className="off-h1">Hardware Engineering</h2>
+                  <div className="cardff">
+                    <p className="off-p1">IoT companies design and develop IoT devices, sensors, and hardware components with expertise in electronics, embedded systems, and prototyping for tailored solutions.</p>
+                    <h1 className="off-h1"><IoHardwareChipOutline /></h1>
+                  </div>
+                </div>
+                <div className="colff">
+                  <h2 className="off-h2">Software Development</h2>
+                  <div className="cardff">
+                    <p className="off-p2">IoT solution companies excel in crafting IoT software, firmware, and middleware using languages like C, C++, Python, Java, ensuring versatile solutions.</p>
+                    <h1 className="off-h2"><RiComputerLine /></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<div className="mySlides">
-  <div className="rowff">
-    <div className="colff">
-      <h2 className="off-h1">Networking & Connectivity</h2>
-      <div className="cardff">
-        <p className="off-p1">Networking and Connectivity: IoT solution firms implement diverse protocols and wireless tech for seamless IoT connectivity, including MQTT, CoAP, IPv6, and 6LoWPAN.</p>
-        <h1 className="off-h1"><FaNetworkWired /></h1>
-      </div>
-    </div>
-    <div className="colff">
-    <h2 className="off-h2">Industry Specific Solutions</h2>
-      <div className="cardff">
-        
-        <p className="off-p2">Specializing in tailored IoT solutions for healthcare, agriculture, smart cities, manufacturing, with expertise in industry-specific requirements.</p>
-        <h1 className="off-h2"><FaRegBuilding /></h1>
-      </div>
-    </div>
-  </div>
+            <div className="mySlides">
+              <div className="rowff">
+                <div className="colff">
+                  <h2 className="off-h1">Networking & Connectivity</h2>
+                  <div className="cardff">
+                    <p className="off-p1">Networking and Connectivity: IoT solution firms implement diverse protocols and wireless tech for seamless IoT connectivity, including MQTT, CoAP, IPv6, and 6LoWPAN.</p>
+                    <h1 className="off-h1"><FaNetworkWired /></h1>
+                  </div>
+                </div>
+                <div className="colff">
+                  <h2 className="off-h2">Industry Specific Solutions</h2>
+                  <div className="cardff">
+                    <p className="off-p2">Specializing in tailored IoT solutions for healthcare, agriculture, smart cities, manufacturing, with expertise in industry-specific requirements.</p>
+                    <h1 className="off-h2"><FaRegBuilding /></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-</div>
+            <div className="mySlides">
+              <div className="rowff">
+                <div className="colff">
+                  <h2 className="off-h1">Cyber Security & Privacy</h2>
+                  <div className="cardff">
+                    <p className="off-p1">IoT solution firms prioritize robust security, understanding IoT threats, and vulnerabilities, ensuring comprehensive protection for devices, networks, and data.</p>
+                    <h1 className="off-h1"><MdOutlineSecurity /></h1>
+                  </div>
+                </div>
+                <div className="colff">
+                  <h2 className="off-h2">Data Analysis & AI</h2>
+                  <div className="cardff">
+                    <p className="off-p2">IoT solution firms analyze vast IoT data, extracting insights efficiently. They implement AI for predictive maintenance, anomaly detection, and optimization.</p>
+                    <h1 className="off-h2"><RiRobot2Line /></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<div className="mySlides">
-  <div className="rowff">
-    <div className="colff">
-      <h2 className="off-h1">Cyber Security & Privacy</h2>
-      <div className="cardff">
-        <p className="off-p1">IoT solution firms prioritize robust security, understanding IoT threats, and vulnerabilities, ensuring comprehensive protection for devices, networks, and data.</p>
-        <h1 className="off-h1"><MdOutlineSecurity /></h1>
-      </div>
-    </div>
-    <div className="colff">
-    <h2 className="off-h2">Data Analysis & AI</h2>
-      <div className="cardff">
-        
-        <p className="off-p2">IoT solution firms analyze vast IoT data, extracting insights efficiently. They implement AI for predictive maintenance, anomaly detection, and optimization.</p>
-        <h1 className="off-h2"><RiRobot2Line /></h1>
-      </div>
-    </div>
-  </div>
+            <a className="prev" onClick={() => plusSlides(-1)}>❮</a>
+            <a className="next" onClick={() => plusSlides(1)}>❯</a>
 
-</div>
-
-        <a className="prev" onClick={() => plusSlides(-1)}>❮</a>
-        <a className="next" onClick={() => plusSlides(1)}>❯</a>
-
-        <div className="dot-container">
-          <span className="dot" onClick={() => currentSlide(1)}></span> 
-          <span className="dot" onClick={() => currentSlide(2)}></span> 
-          <span className="dot" onClick={() => currentSlide(3)}></span> 
+            <div className="dot-container">
+              <span className="dot" onClick={() => currentSlide(1)}></span> 
+              <span className="dot" onClick={() => currentSlide(2)}></span> 
+              <span className="dot" onClick={() => currentSlide(3)}></span> 
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  </div>
-);
+  );
 };
 
 export default Offers;

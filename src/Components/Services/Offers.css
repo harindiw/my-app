@@ -1,14 +1,20 @@
-#offer{
-  background-color: #8591B5;
+/* General Styles */
+#offer {
+  background: url('./Rectangle 51.png') no-repeat center center;
+  background-size: cover;
   min-height: 60vh;
   width: 100%;
   padding-top: 40px;
 }
 
+.work-h {
+  color: #ffffff;
+}
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  /*background: rgba(133, 145, 181, 0.7); /* semi-transparent background */
 }
 
 /* Slides */
@@ -16,7 +22,6 @@
   display: none;
   padding: 40px;
   text-align: center;
-  background-color: #8591B5;
 }
 
 /* Next & previous buttons */
@@ -27,7 +32,7 @@
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color: #888;
+  color: #ffffff;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -39,7 +44,6 @@
   border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -47,16 +51,15 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #8591B5;
-  color: rgb(255, 255, 255);
+ 
+  color: #fff;
 }
 
 /* The dot/bullet/indicator container */
 .dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #8591B5;
-    margin-top: -10px;
+  text-align: center;
+  padding: 20px;
+  margin-top: -10px;
 }
 
 /* The dots/bullets/indicators */
@@ -65,28 +68,19 @@
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #000000;
-  border-radius: 40%;
+  background-color: #717171;
+  border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #ffffff;
 }
 
-/* Add an italic font style to all quotes */
-q {
-  font-style: italic;
-}
-
-/* Add a blue color to the author */
-.author {
-  color: cornflowerblue;
-}
-
-.offer{
+/* Offer Section */
+.offer {
   padding-top: 35px;
   padding-bottom: 30px;
 }
@@ -99,31 +93,23 @@ q {
 }
 
 .colff {
-  flex: 1 1;
+  flex: 1;
   padding-right: 80px;
   padding-left: 80px;
 }
-.mySlides {
-  background-color:  #8591B5;
-}
-.off-h1{
+
+.off-h1, .off-h2 {
   font-size: 28px;
-  color: #000000;
-}
-.off-p1{
-  font-size: 20px;
-  color: #000000;
-}
-.off-h2{
-  font-size: 28px;
-  color: #000000;
-}
-.off-p2{
-  font-size: 20px;
-  color: #000000;
+  color: #ffffff;
 }
 
+.off-p1, .off-p2 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* Adjust anchor link styles */
 a:not([href]):not([tabindex]) {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }

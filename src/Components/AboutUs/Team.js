@@ -7,7 +7,6 @@ import React from 'react';
   return (
 <div>
     <h1 className="About-h">Meet Our Team</h1>
-    {/* <h1 className="work-h1">We are with Awesome people</h1> */}
 <div class="row">
         <div class="about-column">
         <div class="flip-card">

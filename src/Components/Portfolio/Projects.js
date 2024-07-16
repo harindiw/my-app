@@ -36,7 +36,7 @@ function Projects() {
 
   return (
     <div className="portfolio-container">
-      <h2 className="subtitle">Our Portfolio</h2>
+      <h1 className="subtitle">Our Portfolio</h1>
       <div className="image-container">
         {images.map((image, index) => (
           <div
