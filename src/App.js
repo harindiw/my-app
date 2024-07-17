@@ -16,8 +16,8 @@ function App() {
       <Navigation />
       <Banner />
       <Stat />
-      <Team />
       <Offer />
+      <Team />
       <Projects />
       <Review />
       <SendAMsg />

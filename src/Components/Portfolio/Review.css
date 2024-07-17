@@ -12,6 +12,11 @@ html, body{
 a{
   color:#ccc;
 } */
+
+project_h1{
+  color: #001641;
+}
+
 .reviewcontainer{
     /* width:500px;
     min-height:315px;

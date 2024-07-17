@@ -2,6 +2,7 @@
   background-color: #ffffff;
   text-align: center;
   padding: 20px 0; 
+  color: #001641;
 }
 
 .row {
@@ -99,28 +100,24 @@
   background-image: url('men6.png');
 }
 
-.work-h1 {
-  background-color: #ffffff;
-  padding: 20px 0; 
-}
-
 .blue1, .blue2 {
   font-family: 'Roboto', sans-serif;
-  color: #000000;
-  padding: 10px;
+  color: #001641;
   text-align: center; 
-  overflow-wrap: break-word; /* Ensures long words break and stay within the box */
-  line-height: 1.1; /* Decreases line height */
+  overflow-wrap: break-word; /* Ensures long words break and stay within the box */ 
   margin: 0.1px 0; /* Further decreases margin between text blocks */
 }
 
 .blue1 {
   font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
 }
 
 .blue2 {
   font-size: 16px;
   font-weight: lighter;
+  line-height: 1.2;
   padding-left: 10px;
   padding-right: 10px;
 }
