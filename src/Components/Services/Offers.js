@@ -60,14 +60,14 @@ export const Offers = () => {
                 <div className="colff">
                   <h2 className="off-h1">Hardware Engineering</h2>
                   <div className="cardff">
-                    <p className="off-p1">IoT companies design and develop IoT devices, sensors, and hardware components with expertise in electronics, embedded systems, and prototyping for tailored solutions.</p>
+                    <p className="off-p1">We design and develop IoT devices, sensors, and hardware components with expertise in electronics, embedded systems, and prototyping for tailored solutions.</p>
                     <h1 className="off-h1"><IoHardwareChipOutline /></h1>
                   </div>
                 </div>
                 <div className="colff">
                   <h2 className="off-h2">Software Development</h2>
                   <div className="cardff">
-                    <p className="off-p2">IoT solution companies excel in crafting IoT software, firmware, and middleware using languages like C, C++, Python, Java, ensuring versatile solutions.</p>
+                    <p className="off-p2">We excel in crafting IoT software, firmware, and middleware using languages like C, C++, Python, Java, ensuring versatile solutions.</p>
                     <h1 className="off-h2"><RiComputerLine /></h1>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export const Offers = () => {
                 <div className="colff">
                   <h2 className="off-h1">Networking & Connectivity</h2>
                   <div className="cardff">
-                    <p className="off-p1">Networking and Connectivity: IoT solution firms implement diverse protocols and wireless tech for seamless IoT connectivity, including MQTT, CoAP, IPv6, and 6LoWPAN.</p>
+                    <p className="off-p1">We implement diverse protocols and wireless tech for seamless IoT connectivity, including MQTT, CoAP, IPv6, and 6LoWPAN.</p>
                     <h1 className="off-h1"><FaNetworkWired /></h1>
                   </div>
                 </div>
@@ -98,14 +98,14 @@ export const Offers = () => {
                 <div className="colff">
                   <h2 className="off-h1">Cyber Security & Privacy</h2>
                   <div className="cardff">
-                    <p className="off-p1">IoT solution firms prioritize robust security, understanding IoT threats, and vulnerabilities, ensuring comprehensive protection for devices, networks, and data.</p>
+                    <p className="off-p1">We prioritize robust security, understanding IoT threats, and vulnerabilities, ensuring comprehensive protection for devices, networks, and data.</p>
                     <h1 className="off-h1"><MdOutlineSecurity /></h1>
                   </div>
                 </div>
                 <div className="colff">
                   <h2 className="off-h2">Data Analysis & AI</h2>
                   <div className="cardff">
-                    <p className="off-p2">IoT solution firms analyze vast IoT data, extracting insights efficiently. They implement AI for predictive maintenance, anomaly detection, and optimization.</p>
+                    <p className="off-p2">We analyze vast IoT data, extracting insights efficiently.  We implement AI for predictive maintenance, anomaly detection, and optimization.</p>
                     <h1 className="off-h2"><RiRobot2Line /></h1>
                   </div>
                 </div>
