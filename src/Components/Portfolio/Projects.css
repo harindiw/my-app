@@ -1,6 +1,6 @@
 .portfolio-container {
   text-align: center;
-  padding: 0 10px;
+ 
 }
 
 .subtitle {
@@ -9,9 +9,11 @@
 }
 
 .image-container {
+  padding-left:100px;
+  padding-right:100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* justify-content: center; */
+  justify-content: center;
   gap: 0;
 }
 
@@ -28,7 +30,7 @@
 }
 
 .hover-image {
-  width: 80%;
+  width: 100%;
   height: auto;
   /* object-fit: cover; */
   /* transition: transform 0.3s ease; */
