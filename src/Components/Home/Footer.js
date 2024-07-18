@@ -23,8 +23,8 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <li>Home</li>
-              <li>About Us</li>
               <li>Services</li>
+              <li>About Us</li>
               <li>Portfolio</li>
               <li>Contact</li>
             </ul>
