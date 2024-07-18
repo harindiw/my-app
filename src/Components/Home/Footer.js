@@ -1,70 +1,53 @@
-import logo from './logo.png';
-import { FaEnvelope } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { GrInstagram } from "react-icons/gr";
-import { IoLogoYoutube } from "react-icons/io";
+import React from 'react';
+import './Footer.css';
+import { FaGooglePlusG, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
 
-
-import React, { useState } from 'react';
-
-import "./Footer.css";
-
-
-export const Footer = () => {
-  const [activeLink, setActiveLink] = useState('home');
-
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  };
-
+const Footer = () => {
   return (
-    <div class="c">
-  <div class="row">
-    <div class="col-sm">
-    <img className="logo" src={logo} alt=""/>
-    <p className="footer-p">We are pioneers in utilizing the potential of IoT technology to transform how organizations and people engage with the real world.</p>
-    <div className="footer-icon">
-        <a href="info@iotsolutions.lk" target="_blank" rel="noopener noreferrer"><FaEnvelope className="icon1" /></a>
-        <a href="https://www.linkedin.com/company/av-iot/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn className="icon2" /></a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><GrInstagram className="icon3" /></a>
-        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><IoLogoYoutube className="icon4" /></a>
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-left">
+          <img src="logo.png" alt="AV IOT Solutions Logo" className="footer-logo" />
+          <p className="footer-description">
+            We are pioneers in utilizing the potential of IoT technology to transform how organizations and people engage with the real world.
+          </p>
+          <div className="footer-icons">
+            <FaGooglePlusG />
+            <FaLinkedinIn />
+            <FaInstagram />
+            <FaYoutube />
+          </div>
+        </div>
+        <div className="footer-right">
+          <div className="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Services</li>
+              <li>Portfolio</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div className="footer-contact">
+            <h4>Address</h4>
+            <p>298A, Borella Road, Habarakada, Homagama, Western 10204, LK</p>
+            <h4>Phone</h4>
+            <p>+94777371118</p>
+            <h4>Email</h4>
+            <p>info@iotsolutions.lk</p>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="col-sm">
-      <p className="mblue">Quick links</p>
-      <div class = "footerNav" >
-      <p><a href="/"
-          className={activeLink === '/' ? 'footer-link active' : 'footer-link'}
-          onClick={() => onUpdateActiveLink('/')} > Home </a></p>
-      <p><a href="Service"
-          className={activeLink === 'Service' ? 'footer-link active' : 'footer-link'}
-          onClick={() => onUpdateActiveLink('Service')} > Services </a></p>
-      <p><a href="Abouthome"
-          className={activeLink === 'Abouthome' ? 'footer-link active' : 'footer-link'}
-          onClick={() => onUpdateActiveLink('Abouthome')} > About Us </a></p>
-      <p><a href="Blog"
-          className={activeLink === 'Blog' ? 'footer-link active' : 'footer-link'}
-          onClick={() => onUpdateActiveLink('Blog')} > Blog </a></p>
-      <p><a href="Contact"
-          className={activeLink === 'Contact' ? 'footer-link active' : 'footer-link'}
-          onClick={() => onUpdateActiveLink('Contact')} > Contact </a></p>
+      <div className="footer-bottom">
+        <p>© 2024 AV IOT Solutions. All Rights Reserved</p>
+        <div className="footer-bottom-links">
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+        </div>
       </div>
-    </div>
-    
-    <div class="col-sm">
-    <p className="blue">Address</p>
-      <a href="https://www.google.com/maps/dir//298A+Borella+Road,+Habarakada/@6.864384,79.9273699,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ae250d422ae0c6d:0x2867f2400c54e42b!2m2!1d80.0097718!2d6.864391?entry=ttu" className="white1">298A, Borella Road, Habarakada, Homagama</a>
-    <p className="green">Phone</p>
-      <a href="tel:+94777371118" className="white1">+94777371118</a>
-    <p className="blue">Email</p>
-      <a href="mailto:info@iotsolutions.lk" className="white1">info@iotsolutions.lk</a>
-    </div>
-  </div>
-</div>
-  )
-}
+    </footer>
+  );
+};
 
-export default Footer; 
-
-
+export default Footer;
