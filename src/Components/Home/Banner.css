@@ -7,7 +7,7 @@
 .slider {
   position: relative;
   inline-size: 100%;
-  max-block-size: 500px;
+  max-block-size: 1500px;
   overflow: hidden;
 }
 
