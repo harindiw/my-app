@@ -1,13 +1,14 @@
 import React from 'react';
 import './Footer.css';
 import { FaGooglePlusG, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
+import logo from './logo.png';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-left">
-          <img src="logo.png" alt="AV IOT Solutions Logo" className="footer-logo" />
+        <img src={logo} alt="AV IOT Solutions Logo" className="footer-logo" />
           <p className="footer-description">
             We are pioneers in utilizing the potential of IoT technology to transform how organizations and people engage with the real world.
           </p>
@@ -18,7 +19,7 @@ const Footer = () => {
             <FaYoutube />
           </div>
         </div>
-        <div className="footer-right">
+        <div className="footer-middle">
           <div className="footer-links">
             <h4>Quick Links</h4>
             <ul>
@@ -29,6 +30,8 @@ const Footer = () => {
               <li>Contact</li>
             </ul>
           </div>
+        </div>
+        <div className="footer-right">
           <div className="footer-contact">
             <h4>Address</h4>
             <p>298A, Borella Road, Habarakada, Homagama, Western 10204, LK</p>
@@ -51,3 +54,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

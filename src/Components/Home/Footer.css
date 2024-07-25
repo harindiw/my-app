@@ -1,77 +1,56 @@
 .footer {
-    background-color: #001641;
-    color: white;
-    padding: 20px 50px;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .footer-left {
-    flex: 1;
-    margin-right: 50px;
-  }
-  
-  .footer-logo {
-    width: 150px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-description {
-    margin-bottom: 20px;
-  }
-  
-  .footer-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .footer-icons svg {
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .footer-right {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .footer-links, .footer-contact {
-    flex: 1;
-  }
-  
-  .footer-links h4, .footer-contact h4 {
-    margin-bottom: 15px;
-  }
-  
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-contact p {
-    margin: 5px 0;
-  }
-  
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-  }
-  
-  .footer-bottom-links {
-    display: flex;
-    gap: 20px;
-  }
-  
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0; /* Reduced padding */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; /* Reduced padding */
+}
+
+.footer-left, .footer-middle, .footer-right {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px; /* Reduced margin */
+  display: block;
+}
+
+.footer-description {
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-links, .footer-contact {
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; /* Reduced padding */
+  border-top: 1px solid #444;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 10px;
+}

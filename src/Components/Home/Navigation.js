@@ -29,7 +29,7 @@ export const Navigation = () => {
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
-          <img className="logo" src={logo} alt="" />
+          <img className="logo" src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -48,14 +48,14 @@ export const Navigation = () => {
               className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('about')}
             >
-              Services
+              About Us
             </Nav.Link>
             <Nav.Link
               href="#services"
               className={activeLink === 'services' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('services')}
             >
-              About Us
+              Services
             </Nav.Link>
             <Nav.Link
               href="#portfolio"
