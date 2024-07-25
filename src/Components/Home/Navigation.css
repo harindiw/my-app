@@ -1,3 +1,4 @@
+/* Navigation bar styles */
 nav.navbar {
   padding: 9px 0;
   position: fixed;
@@ -13,6 +14,7 @@ nav.navbar.scrolled {
   background-color: #000000;
 }
 
+/* Logo styling */
 nav.navbar .navbar-brand {
   display: flex;
   align-items: center;
@@ -23,6 +25,7 @@ nav.navbar .navbar-brand img.logo {
   height: auto;
 }
 
+/* Nav link styling */
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #ffffff !important;
@@ -31,14 +34,20 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
   transition: opacity 0.3s, color 0.3s;
+  background-color: transparent; /* Ensure background color is transparent */
+  border: none; /* Ensure no border is applied */
+  margin: 0; /* Reset margin */
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link:hover,
 nav.navbar .navbar-nav .nav-link.navbar-link.active {
   opacity: 1;
   color: #007bff !important;
+  background-color: transparent; /* Ensure no background color is applied */
+  border: none; /* Ensure no border is applied */
 }
 
+/* Navbar toggle button styles */
 .navbar-toggler {
   border: none;
 }
@@ -70,6 +79,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   bottom: 6px;
 }
 
+/* Navbar link underline effect */
 .navbar-link {
   position: relative;
   text-decoration: none;
