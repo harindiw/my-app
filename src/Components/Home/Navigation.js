@@ -38,35 +38,35 @@ export const Navigation = () => {
           <Nav className="ms-auto">
             <Nav.Link
               href="/"
-              className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('home')}
+              className={activeLink === '/' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => onUpdateActiveLink('/')}
             >
               Home
             </Nav.Link>
             <Nav.Link
-              href="#about"
-              className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('about')}
+              href="/Services"
+              className={activeLink === '/Services' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => onUpdateActiveLink('Services')}
             >
              Services
             </Nav.Link>
             <Nav.Link
-              href="#portfolio"
-              className={activeLink === 'portfolio' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('portfolio')}
+              href="/AboutUs"
+              className={activeLink === 'aboutUs' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => onUpdateActiveLink('aboutUs')}
             >
               About Us
             </Nav.Link>
             
             <Nav.Link
-              href="#portfolio"
+              href="/Portfolio"
               className={activeLink === 'portfolio' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('portfolio')}
             >
               Portfolio
             </Nav.Link>
             <Nav.Link
-              href="#contact"
+              href="/Contact"
               className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('contact')}
             >

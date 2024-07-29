@@ -1,4 +1,5 @@
 .footer {
+  scroll-behavior: smooth;
   background-color: #001641;
   color: #fff;
   padding: 20px 0; /* Reduced padding */
@@ -46,13 +47,10 @@
   margin-bottom: 10px; /* Reduced margin */
 }
 
-.footer-links ul {
+.footerNav a {
+  color: #ffffff;
   list-style: none;
   padding: 0;
-}
-
-.footer-links ul li {
-  margin-bottom: 5px; /* Reduced margin */
 }
 
 .footer-bottom {

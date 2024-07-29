@@ -43,6 +43,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 
 nav.navbar .navbar-nav .nav-link.navbar-link:hover,
 nav.navbar .navbar-nav .nav-link.navbar-link.active {
+  color: #ffffff;
   opacity: 1;
   background-color: transparent; /* Ensure no background color is applied */
   border: none; /* Ensure no border is applied */

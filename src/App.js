@@ -4,7 +4,7 @@ import {Navigation} from './Components/Home/Navigation';
 import Banner from './Components/Home/Banner';
 import Stat from './Components/AboutUs/Stat';
 import Team from './Components/AboutUs/Team';
-import Offer from './Components/Services/Offers';
+import Offers from './Components/Services/Offers';
 import Projects from './Components/Portfolio/Projects';
 import Review from './Components/Portfolio/Review';
 import SendAMsg from './Components/Contact/SendAMsg';
@@ -16,7 +16,7 @@ function App() {
       <Navigation />
       <Banner />
       <Stat />
-      <Offer />
+      <Offers />
       <Team />
       <Projects />
       <Review />
