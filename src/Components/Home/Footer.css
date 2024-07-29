@@ -1,5 +1,5 @@
 .footer {
-  background-color: #222;
+  background-color: #001641;
   color: #fff;
   padding: 20px 0; /* Reduced padding */
 }
@@ -22,12 +22,24 @@
 }
 
 .footer-description {
-  margin-bottom: 10px; /* Reduced margin */
+  text-align: left;
+  margin-bottom: 30px; /* Reduced margin */
 }
 
 .footer-icons {
   display: flex;
-  gap: 10px;
+  gap: 15px; /* Adjust the gap as needed */
+  margin-top: 20px;
+}
+
+.footer-icons a {
+  color: #ffffff; /* Adjust the color as needed */
+  font-size: 20px; /* Adjust the size as needed */
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #8591B5; /* Adjust the hover color as needed */
 }
 
 .footer-links, .footer-contact {
@@ -44,6 +56,7 @@
 }
 
 .footer-bottom {
+  font-size: 12px;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px; /* Reduced padding */

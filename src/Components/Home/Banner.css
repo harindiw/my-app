@@ -4,14 +4,14 @@
   color: white;
 }
 
-.slider {
+.slider-container {
   position: relative;
   inline-size: 100%;
   max-block-size: 1500px;
   overflow: hidden;
 }
 
-.slides {
+.slider-image {
   inline-size: 100%;
   display: flex;
   transition: transform 1s ease-in-out;

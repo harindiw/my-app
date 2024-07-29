@@ -44,9 +44,9 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav .nav-link.navbar-link:hover,
 nav.navbar .navbar-nav .nav-link.navbar-link.active {
   opacity: 1;
-  color: #007bff !important;
   background-color: transparent; /* Ensure no background color is applied */
   border: none; /* Ensure no border is applied */
+  font-weight: bolder;
 }
 
 /* Navbar toggle button styles */
@@ -94,7 +94,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #007bff;
+  background-color: #ffffff;
   transition: width 0.3s ease-in-out;
 }
 

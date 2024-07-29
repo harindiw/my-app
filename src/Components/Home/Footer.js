@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { FaGooglePlusG, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
+import {FaFacebook, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
 import logo from './logo.png';
 
 const Footer = () => {
@@ -10,13 +10,21 @@ const Footer = () => {
         <div className="footer-left">
         <img src={logo} alt="AV IOT Solutions Logo" className="footer-logo" />
           <p className="footer-description">
-            We are pioneers in utilizing the potential of IoT technology to transform how organizations and people engage with the real world.
+          We are pioneers in utilizing the potential of IoT technology to transform how organizations and people engage with the real world.
           </p>
           <div className="footer-icons">
-            <FaGooglePlusG />
-            <FaLinkedinIn />
-            <FaInstagram />
-            <FaYoutube />
+            <a href="https://www.facebook.com/share/UpGDsZWdKfheW3RQ/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer">
+              <FaFacebook />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+               <FaYoutube />
+            </a>
           </div>
         </div>
         <div className="footer-middle">
