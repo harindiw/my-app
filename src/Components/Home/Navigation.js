@@ -57,13 +57,7 @@ export const Navigation = () => {
             >
               About Us
             </Nav.Link>
-            <Nav.Link
-              href="#services"
-              className={activeLink === 'services' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('services')}
-            >
-              Services
-            </Nav.Link>
+            
             <Nav.Link
               href="#portfolio"
               className={activeLink === 'portfolio' ? 'active navbar-link' : 'navbar-link'}
