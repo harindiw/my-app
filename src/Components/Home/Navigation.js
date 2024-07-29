@@ -48,6 +48,13 @@ export const Navigation = () => {
               className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('about')}
             >
+             Services
+            </Nav.Link>
+            <Nav.Link
+              href="#portfolio"
+              className={activeLink === 'portfolio' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => onUpdateActiveLink('portfolio')}
+            >
               About Us
             </Nav.Link>
             <Nav.Link
@@ -58,9 +65,9 @@ export const Navigation = () => {
               Services
             </Nav.Link>
             <Nav.Link
-              href="#Projects"
-              className={activeLink === 'Projects' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('Projects')}
+              href="#portfolio"
+              className={activeLink === 'portfolio' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => onUpdateActiveLink('portfolio')}
             >
               Portfolio
             </Nav.Link>
