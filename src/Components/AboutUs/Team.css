@@ -22,7 +22,10 @@
 @media screen and (max-width: 600px) {
   .about-column {
     max-width: 100%;
+    display: flex;
     flex: 1 1 100%; 
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
   }
 }

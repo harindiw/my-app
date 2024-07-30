@@ -9,6 +9,7 @@ import Projects from './Components/Portfolio/Projects';
 import Review from './Components/Portfolio/Review';
 import SendAMsg from './Components/Contact/SendAMsg';
 import Footer from './Components/Home/Footer';
+//import { Route } from 'react-router-dom';
 
 function App() {
   return (

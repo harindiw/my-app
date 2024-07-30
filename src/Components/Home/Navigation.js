@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from './logo.png';
 import "./Navigation.css";
+import "../Services/Offers";
+
+
 
 export const Navigation = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -44,10 +47,11 @@ export const Navigation = () => {
               Home
             </Nav.Link>
             <Nav.Link
-              href="/Services"
-              className={activeLink === '/Services' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('Services')}
+              href="/#Offers"
+              className={activeLink === '/#Offers' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => onUpdateActiveLink('#Offers')}
             >
+              
              Services
             </Nav.Link>
             <Nav.Link
