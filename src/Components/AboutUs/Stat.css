@@ -4,7 +4,7 @@
   box-sizing: border-box; 
 }
 
-.stat_bg, .row-stat {
+.row-stat {
   background: #ffffff;
   display: flex;
   align-items: center;
@@ -12,10 +12,6 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 20px 0; 
-}
-
-.stat_bg {
-  height: auto;
 }
 
 .row-stat {
@@ -26,18 +22,15 @@
 @media screen and (max-width: 600px) {
   .column-stat {
     width: 100%;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
   }
 
+
   .row-stat {
     padding-top: 50px;
-    height: auto;
-  }
-
-  .stat_bg {
     height: auto;
   }
 }
@@ -100,10 +93,10 @@ h3 {
   }
 }
 
-.center-box {
+/*.center-box {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-}
+}*/
