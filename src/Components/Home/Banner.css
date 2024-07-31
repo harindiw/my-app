@@ -4,14 +4,14 @@
   color: white;
 }
 
-.slider-container {
+.slider {
   position: relative;
   inline-size: 100%;
-  max-block-size: 1500px;
+  max-block-size: 500px;
   overflow: hidden;
 }
 
-.slider-image {
+.slides {
   inline-size: 100%;
   display: flex;
   transition: transform 1s ease-in-out;
@@ -38,7 +38,7 @@
 .banner-content h1 {
   color: #ffffff;
   font-size: 60px;
-  text-shadow: 0.5px 0.5px 1px #001641 ;
+  text-shadow: 0.5px 0.5px 1px #001641;
   margin-block-end: 1rem;
 }
 
@@ -57,7 +57,34 @@
   border-radius: 5px;
   cursor: pointer;
 }
-/*
-.contact-btn:hover {
-  background-color: none;
-}*/
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .banner-content p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .banner-content .contact-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-content h1 {
+    font-size: 30px; /* Further adjust font size for smaller screens */
+  }
+
+  .banner-content p {
+    font-size: 14px; /* Further adjust font size for smaller screens */
+  }
+
+  .banner-content .contact-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem; /* Further adjust font size for smaller screens */
+  }
+}
