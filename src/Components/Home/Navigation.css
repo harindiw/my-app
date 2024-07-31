@@ -1,119 +1,120 @@
-/* Navigation bar styles */
-nav.navbar {
-  padding: 9px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 9999;
-  transition: 0.32s ease-in-out;
-  background-color: #0a0a0a;
+/* General Reset and Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
-nav.navbar.scrolled {
-  padding: 5px 0;
-  background-color: #000000;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Logo styling */
-nav.navbar .navbar-brand {
-  display: flex;
-  align-items: center;
-}
-
-nav.navbar .navbar-brand img.logo {
-  max-width: 150px;
-  height: auto;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-/* Nav link styling */
-nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
-  color: #ffffff !important;
-  letter-spacing: 0.8px;
-  padding: 0 25px;
-  font-size: 18px;
-  opacity: 0.75;
-  transition: opacity 0.3s, color 0.3s;
-  background-color: transparent; /* Ensure background color is transparent */
-  border: none; /* Ensure no border is applied */
-  margin: 0; /* Reset margin */
-}
-
-nav.navbar .navbar-nav .nav-link.navbar-link:hover,
-nav.navbar .navbar-nav .nav-link.navbar-link.active {
+body {
+  background: #080808;
   color: #ffffff;
-  opacity: 1;
-  background-color: transparent; /* Ensure no background color is applied */
-  border: none; /* Ensure no border is applied */
-  font-weight: bolder;
 }
 
-/* Navbar toggle button styles */
-.navbar-toggler {
-  border: none;
+/* Header Styles */
+.header {
+  width: 100%;
+  padding: 10px 10%;
+  background-size: cover;
+  background-position: center;
 }
 
-.navbar-toggler-icon {
-  background-image: none;
-  width: 24px;
-  height: 24px;
-  position: relative;
+/* Navigation Styles */
+nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-  content: '';
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-  position: absolute;
+.logo {
+  width: 140px;
+  padding-top: 5px;
+  padding-left: 10px;
 }
 
-.navbar-toggler-icon::before {
-  top: 6px;
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.navbar-toggler-icon::after {
-  bottom: 6px;
+nav ul li {
+  margin: 10px 20px;
 }
 
-/* Navbar link underline effect */
-.navbar-link {
-  position: relative;
+nav ul li a {
+  color: #ffffff;
   text-decoration: none;
+  font-size: 18px;
+  position: relative;
 }
 
-.navbar-link::after {
+nav ul li a::after {
   content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
   width: 0;
-  height: 2px;
-  background-color: #ffffff;
-  transition: width 0.3s ease-in-out;
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
 }
 
-.navbar-link:hover::after,
-.navbar-link.active::after {
+nav ul li a:hover::after {
   width: 100%;
 }
 
-/* Adjustments for mobile responsiveness */
-@media (max-width: 768px) {
-  nav.navbar .navbar-nav .nav-link.navbar-link {
-    padding: 10px;
-    font-size: 16px;
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    font-size: 25px;
+    color: #ffffff;
   }
 
-  nav.navbar .navbar-brand img.logo {
-    max-width: 120px;
-    margin-left: 15px;
-    margin-top: 5px;
+  nav ul {
+    background: #333;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    flex-direction: column;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul.open {
+    right: 0;
+  }
+
+  nav ul li {
+    margin: 25px;
+    text-align: center;
+  }
+
+  .menu-icon.close {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .header-text {
+    margin-top: 70%;
+    font-size: 18px;
+  }
+
+  h1.span1, h1.span2 {
+    font-size: 20px;
   }
 }

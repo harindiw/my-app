@@ -1,84 +1,36 @@
-import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from './logo.png';
-import "./Navigation.css";
-import "../Services/Offers";
+import React, { useState } from "react";
+import logo from './logo.png'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
+import './Navigation.css'; 
 
+const Navigation = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  const openMenu = () => {
+    setMenuOpen(true);
+  };
 
-export const Navigation = () => {
-  const [activeLink, setActiveLink] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   return (
-    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-      <Container>
-        <Navbar.Brand href="/">
-          <img className="logo" src={logo} alt="Logo" />
-        </Navbar.Brand>
-        {/*<Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>*/}
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link
-              href="/"
-              className={activeLink === '/' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('/')}
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              href="/#Offers"
-              className={activeLink === '/#Offers' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('#Offers')}
-            >
-              
-             Services
-            </Nav.Link>
-            <Nav.Link
-              href="/AboutUs"
-              className={activeLink === 'aboutUs' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('aboutUs')}
-            >
-              About Us
-            </Nav.Link>
-            
-            <Nav.Link
-              href="/Portfolio"
-              className={activeLink === 'portfolio' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('portfolio')}
-            >
-              Portfolio
-            </Nav.Link>
-            <Nav.Link
-              href="/Contact"
-              className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('contact')}
-            >
-              Contact
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div className="header">
+      <nav>
+        <img src={logo} className="logo" alt="Logo" />
+        <ul id="sidemenu" className={menuOpen ? "open" : ""}>
+          <li><a href="#banner" onClick={closeMenu}>Home</a></li>
+          <li><a href="#Offers" onClick={closeMenu}>Services</a></li>
+          <li><a href="#Team" onClick={closeMenu}>About Us</a></li>
+          <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
+          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+          <FontAwesomeIcon icon={faTimes} className="menu-icon close" onClick={closeMenu} />
+        </ul>
+        <FontAwesomeIcon icon={faBars} className="menu-icon open" onClick={openMenu} />
+      </nav>
+    </div>
   );
 };
+
+export default Navigation;
