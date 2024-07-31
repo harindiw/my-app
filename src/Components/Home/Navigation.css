@@ -10,13 +10,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #080808;
-  color: #ffffff;
-}
-
 /* Header Styles */
 .header {
+  background: #080808;
   width: 100%;
   padding: 10px 10%;
   background-size: cover;
