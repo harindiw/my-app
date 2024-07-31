@@ -93,6 +93,11 @@
     justify-content: center;
     margin-top: 10px;
   }
+
+  .footer-contact{
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {

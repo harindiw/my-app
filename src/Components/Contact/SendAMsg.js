@@ -32,9 +32,7 @@ export const SendAMsg = () => {
 
   return (
     <>
-
-    
-      <div className='contact'>
+    <div className='contact'>
       <div id="contact-container">
   <h1 className="contact-h1">&bull; Contact Us &bull;</h1>
   <div class="underline">
